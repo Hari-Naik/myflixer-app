@@ -3,8 +3,6 @@ import Filter from "@/components/filter/Filter";
 import Pagination from "@/components/pagination/Pagination";
 import { fetchMovies } from "@/lib/data";
 import { Movie } from "@/lib/definations";
-import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
 import { tituliam } from "@/components/fonts";
 
 export default async function Movie({
