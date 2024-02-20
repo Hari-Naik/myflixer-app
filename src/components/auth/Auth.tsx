@@ -74,7 +74,7 @@ const Auth: React.FC<Props> = ({ showLogin, setShowLogin }) => {
         if (res?.ok) {
           setShowLogin(false);
         } else {
-          setError("Invalid credentails");
+          setError(res?.error || "Invalid credentials");
         }
       } catch (error) {
         setError("Something went wrong");
